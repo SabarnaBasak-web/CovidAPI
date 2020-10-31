@@ -1,0 +1,93 @@
+body{
+  background-color: #4285F4;
+  color:#fff;
+  font-family: 'Amaranth', sans-serif;
+}
+
+
+.tracker{
+  width:350px;
+  height:auto;
+  margin-top:20px;
+}
+
+.card{
+  height:auto;
+  width:180px;
+  color:#000;
+  position: relative;
+
+}
+
+.img-logo{
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  height:55px;
+  width: 55px;
+}
+
+.data{
+  font-size:20px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.note{
+  font-size:12px;
+  margin-top: 10px;
+}
+
+#states{
+  font-size:15px;
+}
+
+#states option{
+  height:100px
+}
+
+
+.shortcutmenu{
+  height:40px;
+  width:40px;
+  border:none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color:#fff;
+  position: fixed;
+  top:50%;
+  right:10%;
+  transform:translateY(-50%);
+  padding:10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.shortcutmenu img{
+  height: 55px;
+  width: 55px;
+}
+
+.shortcutdrag{
+  height:40px;
+  width:40px;
+  border:none;
+  border-radius: 50%;
+  background-color: #4285F4;
+  position: fixed;
+  bottom:20%;
+  right:10%;
+  transform:translateY(-50%);
+  padding:10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  -webkit-app-region: drag;
+}
+
+.shortcutdrag img{
+  height: 40px;
+  width: 40px;
+  align-items: center;
+}

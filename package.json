@@ -1,0 +1,17 @@
+{
+  "name": "covid_India_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . covid_India_data --overwrite --asar=true --platform=win32 --arch=ia32 --icon=asset/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"covid_India_data\""
+  },
+  "author": "S.Basak",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^8.2.1",
+    "jquery": "^3.5.0"
+  }
+}

@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Covid 19 Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/index.css">
+</head>
+<body>
+    <h2 class="h2-responsive text-center mt-2 mb-5">Covid-19 India  </h2>
+    <div class=" container-fluid">
+        <h5 class="h5-responsive">State Wise Data :
+          <span class="select-state">
+              <label for="states"></label>
+              <select name="states" id="states">
+                <option value="Total" selected>Total</option>
+              </select>
+          </span>
+        <div class="tracker">
+           <div class="row">
+             <div class="col-sm-6">
+                 <div class="card">
+                   <h5 class="card-title text-center">Confirmed</h5>
+                  <div class="card-body mt-2">
+                    <h6 class="h6-responsive data confirmed"></h6>
+                    <img src="asset/images/virus.png" class="img-logo" alt="">
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="card">
+                 <h5 class="card-title text-center">Active</h5>
+                <div class="card-body mt-2">
+                  <h6 class="h6-responsive data active"></h6>
+                  <img src="asset/images/medical.jpg" class="img-logo" alt="">
+                </div>
+              </div>
+             </div>
+           </div>
+           <div class="row mt-2">
+             <div class="col-sm-6">
+                 <div class="card">
+                   <h5 class="card-title text-center">Recovered</h5>
+                  <div class="card-body mt-2">
+                    <h6 class="h6-responsive data recovered"></h6>
+                    <img src="asset/images/physiotherapy.png" class="img-logo" alt="">
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-6">
+               <div class="card">
+                 <h5 class="card-title text-center">Deaths</h5>
+                <div class="card-body mt-2">
+                  <h6 class="h6-responsive data deaths"></h6>
+                  <img src="asset/images/death.png" class="img-logo" alt="">
+                </div>
+              </div>
+             </div>
+           </div>
+           <p class="note">Updated on: <span class="updateTime"></span> <br><br> **Data gather from volunteer-driven API for COVID-19 stats & patient tracing in India </p>
+        </div>
+    </div>
+
+    <div class="shortcutmenu">
+      <img src="asset/images/close.png" class="closebtn" alt="">
+    </div>
+    <div class="shortcutdrag">
+      <img src="asset/images/slider.png" class="dragbtn" alt="">
+    </div>
+    <script>
+      window.nodeRequire = require;
+      delete window.require;
+      delete window.exports;
+      delete window.module;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="asset/js/index.js" charset="utf-8"></script>
+</body>
+</html>
